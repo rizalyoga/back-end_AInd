@@ -1,0 +1,26 @@
+###Get all Data
+GET http://localhost:5000/todolist
+
+###Get data by id
+GET http://localhost:5000/todolist/6
+
+###Create Data
+POST http://localhost:5000/todolist
+Content-Type: application/json
+
+{
+    "todo" : "test backend aitindo",
+    "status_todo": false
+}
+
+###Edit Data by Id
+PATCH  http://localhost:5000/todolist/6
+Content-Type: application/json
+
+{
+    "todo" : "test backend aitindo",
+    "status_todo": false
+}
+
+###Delete Data
+DELETE http://localhost:5000/todolist/7
